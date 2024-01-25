@@ -1,10 +1,15 @@
 .card {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
-  box-shadow: 3px 3px #FFFFFF;
+  box-shadow: 4px 4px #FFFFFF;
+  text-align: center;
   padding: 50px;
 }
 
+.card > h2 {
+  font-size: 32px;
+}
+
 .card img {
-  border-radius: 15px;
+  border-radius: 10px;
 }
