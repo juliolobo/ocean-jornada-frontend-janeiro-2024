@@ -1,14 +1,16 @@
 import Tag from "../Tag/Tag"
 
-function Card() {
+function Card(props) {
+  const item = props.item
+  // console.log(item)
     return (
       <>
         <div className='card'>
-          <h2>Rick Sanchez</h2>
+          <h2>{item.name}</h2>
           <div className="tags">
             <Tag />
           </div>
-          <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" />
+          <img src={item.image} />
         </div>
       </>
     )
