@@ -8,8 +8,10 @@ function Card(props) {
       <>
         <div className='card'>
           <h2>{item.name}</h2>
-          <div className="tags">
-            <Tag tag={tags} />
+          <div>
+            <div className="tags">
+              <Tag tag={tags} />
+            </div>
           </div>
           <img src={item.image} />
         </div>

@@ -4,7 +4,7 @@ function Tag(props) {
     const tags = props
     return (
         <>
-        {tags.tag.map((tag, i) => <div className="tag" key={i}>{tag}</div>)}
+            {tags.tag.map((tag, i) => <div className="tag" key={i}>{tag}</div>)}
         </>
     )
 }

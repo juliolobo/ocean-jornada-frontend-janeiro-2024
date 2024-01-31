@@ -11,38 +11,41 @@
 }
 
 .card {
-  border: 1px solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 4px 4px #FFFFFF;
+  padding: 16px;
+  box-shadow: 4px 4px white;
   text-align: center;
-  padding: 50px;
   cursor: pointer;
   width: 300px;
 }
 
 .card > h2 {
   font-size: 32px;
-  border-left: 6px solid #a9d3e9;
+  border-left: 6px solid #A9D3E9;
 }
 
 .card > img {
   border-radius: 10px;
 }
 
-.card > .tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
   margin-bottom: 24px;
   max-width: 300px;
+  justify-content: center;
 }
 
-.card > .tags > .tag {
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  color: #333;
+.tag {
+  background: white;
+  color: black;
   font-size: 12px;
   font-weight: bold;
-  padding: 5px 12px;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
