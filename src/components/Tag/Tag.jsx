@@ -1,11 +1,10 @@
 import { useState } from "react"
 
-function Tag() {
+function Tag(props) {
+    const tags = props
     return (
         <>
-        <div className="tag">Status: Vivo</div>
-        <div className="tag">Espécie: Humana</div>
-        <div className="tag">Origem: Terra C-137</div>
+        {tags.tag.map((tag, i) => <div className="tag" key={i}>{tag}</div>)}
         </>
     )
 }
